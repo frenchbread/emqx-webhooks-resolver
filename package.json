@@ -1,9 +1,25 @@
 {
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint ./",
+    "lint:fix": "./node_modules/.bin/eslint ./ --fix",
+    "build": "./node_modules/.bin/tsc",
+    "start": "npm run build && node ./dist/index"
+  },
   "dependencies": {
+    "dotenv": "^16.0.1",
     "koa": "^2.13.4",
     "koa-bodyparser": "^4.3.0",
     "koa-cors": "^0.0.16",
     "koa-json": "^2.0.2",
     "koa-router": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/koa-bodyparser": "^4.3.7",
+    "@types/koa-cors": "^0.0.2",
+    "@types/koa-json": "^2.0.20",
+    "@types/koa-router": "^7.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.36.0",
+    "@typescript-eslint/parser": "^5.36.0",
+    "eslint": "^8.23.0"
   }
 }

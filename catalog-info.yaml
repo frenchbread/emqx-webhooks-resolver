@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "emqx-webhooks-resolver"
+  description: API server to resolve MQTT messages via HTTP webhooks
+  tags:
+    - emqx
+    - mqtt
+    - http
+    - api
+spec:
+  type: service
+  lifecycle: experimental
+  owner: frenchbread
